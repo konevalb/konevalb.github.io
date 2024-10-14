@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Brenden Koneval, Launches Github Site"
+title: "Launched Github Site"
 date: 2024-10-14
 ---
 
