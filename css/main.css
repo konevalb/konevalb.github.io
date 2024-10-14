@@ -4,11 +4,12 @@ body {
     width: 70%;
     background-color: #1e1e1e; /* Dark background */
     color: #f0f0f0; /* Light text */
+    font-family: 'Roboto', sans-serif; /* font */
 }
 
 /* Navigation styles */
 nav ul, footer ul {
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Roboto', sans-serif;
     padding: 0;
     list-style: none;
     font-weight: bold;
@@ -22,6 +23,7 @@ nav ul li, footer ul li {
 a {
     text-decoration: none;
     color: #1e90ff; /* Lighter link color for contrast */
+    transition: color 0.3s ease; /* Smooth transition for hover */
 }
 
 a:hover {
@@ -32,13 +34,13 @@ a:hover {
 /* Header and paragraph styles */
 h1 {
     font-size: 3em;
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Roboto', sans-serif;
     color: #ffffff; /* White color for headers */
 }
 
 p {
     font-size: 1.5em;
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Roboto', sans-serif;
     line-height: 1.4em;
     color: #dcdcdc; /* Slightly lighter gray for text */
 }
@@ -47,16 +49,11 @@ p {
 footer {
     border-top: 1px solid #333333; /* Darker border on top of footer */
     font-size: .8em;
+    text-align: center;
 }
 
-/* Post list styles */
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
+footer ul li a:hover {
+    color: #1e90ff;
 }
 
 /* Adding a subtle box shadow to container */
@@ -67,19 +64,46 @@ ul.posts li {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Soft shadow effect */
 }
 
-/* Blurb styling */
-.blurb h1 {
-    margin-bottom: 15px;
+/* Styling for Project Links Section */
+.links ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.blurb p {
-    margin-top: 0;
+.links li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
-/* Footer link hover effect */
-footer ul li a:hover {
+.links a {
     color: #1e90ff;
+    font-weight: bold;
+    text-decoration: none;
 }
-ul.posts li {
-    list-style: none;
+
+.links a:hover {
+    color: #87cefa;
+    text-decoration: underline;
+}
+
+/* General section styling */
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.section ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.section p, .section ul li {
+    color: #dcdcdc;
+    font-size: 1.2em;
+    line-height: 1.6em;
 }
