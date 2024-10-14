@@ -1,43 +1,84 @@
+/* General styles */
 body {
     margin: 60px auto;
     width: 70%;
+    background-color: #1e1e1e; /* Dark background */
+    color: #f0f0f0; /* Light text */
 }
+
+/* Navigation styles */
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0;
     list-style: none;
     font-weight: bold;
 }
+
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
 a {
     text-decoration: none;
-    color: #999;
+    color: #1e90ff; /* Lighter link color for contrast */
 }
+
 a:hover {
     text-decoration: underline;
+    color: #87cefa; /* Hover effect for links */
 }
+
+/* Header and paragraph styles */
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    color: #ffffff; /* White color for headers */
 }
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: #dcdcdc; /* Slightly lighter gray for text */
 }
+
+/* Footer styles */
 footer {
-    border-top: 1px solid #d5d5d5;
+    border-top: 1px solid #333333; /* Darker border on top of footer */
     font-size: .8em;
 }
 
+/* Post list styles */
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
 
+ul.posts li {
+    list-style: none;
+}
+
+/* Adding a subtle box shadow to container */
+.container {
+    background-color: #2e2e2e; /* Dark gray for container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Soft shadow effect */
+}
+
+/* Blurb styling */
+.blurb h1 {
+    margin-bottom: 15px;
+}
+
+.blurb p {
+    margin-top: 0;
+}
+
+/* Footer link hover effect */
+footer ul li a:hover {
+    color: #1e90ff;
+}
 ul.posts li {
     list-style: none;
 }
