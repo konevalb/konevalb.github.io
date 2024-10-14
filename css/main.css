@@ -38,6 +38,7 @@ h1 {
 
 p {
     font-size: 1.5em;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     line-height: 1.4em;
     color: #dcdcdc; /* Slightly lighter gray for text */
 }
